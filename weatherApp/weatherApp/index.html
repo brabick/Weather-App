@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Check the Weather</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <link href="http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=d719c01cf81b957caff18cdb3a02ffe2" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .weatherData {
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            left: 000px;
+            padding: 5px 10px;
+            margin: 0;
+            font-size: 18px;
+            line-height: 18px;
+            border-radius: 3px;
+            display: block;
+            z-index: 100;
+        }
+
+    </style>
+</head>
+<body>
+    <div id='map'></div>
+    <pre id="weatherData" class="weatherData"></pre>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYnJhYmljayIsImEiOiJjanU5aHZweXIwNmJuNDRxcWpnMWphZGRtIn0.lcDz2CoUjLPZF12GPQT6Gw';
+        var map = new mapboxgl.Map({
+            container: 'map', // container id
+            style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+            center: [-74.50, 40], // starting position [lng, lat]
+            zoom: 3 // starting zoom
+        });
+
+        var marker = new mapboxgl.Marker({
+            draggable: true
+        })
+            .setLngLat([-78.96196465145502, 34.05093386644228])
+            .addTo(map);
+
+        function onDragEnd() {
+
+            var lngLat = marker.getLngLat();
+            var api = "http://api.openweathermap.org/data/2.5/weather?";
+            var lon = "lon=";
+            var lat = "lat=";
+            var lonValue = lngLat.lng;
+            var latValue = lngLat.lat;
+            var apiKey = "&appid=d719c01cf81b957caff18cdb3a02ffe2";
+            var units = "&units=metric";
+            var fullUrl = api + lat + latValue + "&" + lon + lonValue + apiKey + units;
+            $.get(fullUrl, function (data, status) {
+                console.log(data.main.temp);
+                //window.alert("The temperature in " + data.name + " is " + data.main.temp + "C");
+                document.getElementById("weatherData").innerHTML = "Weather Data<br />The temperature in " + data.name + " is " + data.main.temp + "C<br />" +
+                    "The min and max temps are " + data.main.temp_min + "C and " + data.main.temp_max + "C<br />" +
+                    "Wind speeds are " + data.wind.speed + " meters/sec with " + data.clouds.all + "% cloudiness<br />" +
+                    "Weather:" + data.weather[0].description;
+            })
+
+        }
+        marker.on('dragend', onDragEnd);
+        document.getElementById("weatherData").innerHTML = "Drag the marker to get weather data in that location."
+
+    </script>
+
+</body>
+</html>
+

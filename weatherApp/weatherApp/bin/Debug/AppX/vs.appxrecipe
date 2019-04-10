@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-TPIN312</Machine>
+    <WindowsUser>brabi</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>e679034b-d810-4fd8-8e96-ba0124308bdf</PackageIdentityName>
+    <PackageIdentityPublisher>CN=brabi</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\brabi\Weather-App\weatherApp\weatherApp\bld\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
+    <LayoutDir>C:\Users\brabi\Weather-App\weatherApp\weatherApp\bin\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>2E1548B48E88B99038B204A2C0BEB5FAD25E8398484BF4C97EEBF4710823C603</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>e679034b-d810-4fd8-8e96-ba0124308bdf_1.0.0.0_neutral__a8t5htry8m03r</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>e679034b-d810-4fd8-8e96-ba0124308bdf_a8t5htry8m03r!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>e679034b-d810-4fd8-8e96-ba0124308bdf</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=brabi</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\brabi\Weather-App\weatherApp\weatherApp\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-10T07:51:07.854</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\brabi\Weather-App\weatherApp\weatherApp\index.html">
+      <PackagePath>index.html</PackagePath>
+      <Modified>2019-04-10T09:25:38.004</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\brabi\Weather-App\weatherApp\weatherApp\images\LockScreenLogo.scale-200.png">
+      <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2019-02-14T15:57:48.444</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\brabi\Weather-App\weatherApp\weatherApp\images\SplashScreen.scale-200.png">
+      <PackagePath>images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-14T15:57:48.444</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\brabi\Weather-App\weatherApp\weatherApp\images\Square150x150Logo.scale-200.png">
+      <PackagePath>images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-14T15:57:48.444</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\brabi\Weather-App\weatherApp\weatherApp\images\Square44x44Logo.scale-200.png">
+      <PackagePath>images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-14T15:57:48.444</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\brabi\Weather-App\weatherApp\weatherApp\images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-14T15:57:48.444</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\brabi\Weather-App\weatherApp\weatherApp\images\StoreLogo.png">
+      <PackagePath>images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-14T15:57:48.444</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\brabi\Weather-App\weatherApp\weatherApp\images\Wide310x150Logo.scale-200.png">
+      <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-14T15:57:48.444</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\brabi\Weather-App\weatherApp\weatherApp\js\main.js">
+      <PackagePath>js\main.js</PackagePath>
+      <Modified>2019-04-10T09:24:39.378</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\brabi\Weather-App\weatherApp\weatherApp\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2019-04-10T09:25:08.918</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\brabi\Weather-App\weatherApp\weatherApp\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2019-04-10T07:51:07.731</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
